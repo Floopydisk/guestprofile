@@ -1,0 +1,464 @@
+.new-user-form {
+    background-color: #fafafb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .new-user-form .div {
+    background-color: #fafafb;
+    width: 1440px;
+    height: 1020px;
+    position: relative;
+  }
+  
+  .new-user-form .container {
+    position: absolute;
+    width: 1353px;
+    height: 770px;
+    top: 177px;
+    left: 43px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #f3f4f6;
+  }
+  
+  .new-user-form .textbox {
+    top: 120px;
+    left: 83px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textfield {
+    position: absolute;
+    width: 389px;
+    height: 50px;
+    top: 22px;
+    left: -1px;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: transparent;
+  }
+  
+  .new-user-form .text-wrapper {
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #bcc1ca;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .text-wrapper-2 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #424955;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .textbox-2 {
+    top: 120px;
+    left: 500px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    left: 360px;
+  }
+  
+  .new-user-form .text-wrapper-3 {
+    position: absolute;
+    width: 62px;
+    top: 123px;
+    left: 916px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #424955;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .new-user-form .radio {
+    position: absolute;
+    width: 211px;
+    height: 22px;
+    top: 152px;
+    left: 916px;
+  }
+  
+  .new-user-form .frame {
+    position: absolute;
+    width: 70px;
+    height: 22px;
+    top: 0;
+    left: 141px;
+  }
+  
+  .new-user-form .overlap-group {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 0;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #2c35e0;
+  }
+  
+  .new-user-form .ellipse {
+    position: relative;
+    width: 9px;
+    height: 9px;
+    top: 2px;
+    left: 2px;
+    background-color: #2c35e0;
+    border-radius: 4.5px;
+    border: 1px solid;
+    border-color: transparent;
+  }
+  
+  .new-user-form .text-wrapper-4 {
+    position: absolute;
+    top: -1px;
+    left: 22px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #171a1f;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .frame-2 {
+    width: 55px;
+    height: 22px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .new-user-form .ellipse-2 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 0;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #565e6c;
+  }
+  
+  .new-user-form .textbox-3 {
+    top: 199px;
+    left: 916px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-4 {
+    top: 199px;
+    left: 500px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-5 {
+    top: 279px;
+    left: 83px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-6 {
+    top: 359px;
+    left: 83px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .by-submitting-your {
+    position: absolute;
+    width: 643px;
+    top: 630px;
+    left: 83px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .new-user-form .span {
+    color: #6e7787;
+  }
+  
+  .new-user-form .text-wrapper-5 {
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #379ae6;
+    text-decoration: underline;
+  }
+  
+  .new-user-form .line {
+    width: 1300px;
+    top: 618px;
+    left: 44px;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .new-user-form .button {
+    all: unset;
+    box-sizing: border-box;
+    width: 134px;
+    left: 1175px;
+    background-color: #636ae8;
+    position: absolute;
+    height: 44px;
+    top: 638px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: transparent;
+  }
+  
+  .new-user-form .text-wrapper-6 {
+    position: absolute;
+    top: 10px;
+    left: 33px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .arrow-left {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 14px;
+    left: 85px;
+  }
+  
+  .new-user-form .group {
+    position: relative;
+    width: 11px;
+    height: 8px;
+    top: 4px;
+    left: 2px;
+  }
+  
+  .new-user-form .overlap-group-wrapper {
+    height: 8px;
+  }
+  
+  .new-user-form .overlap-group-2 {
+    position: relative;
+    width: 12px;
+    height: 10px;
+    top: -1px;
+    left: -1px;
+  }
+  
+  .new-user-form .group-2 {
+    position: absolute;
+    width: 11px;
+    height: 1px;
+    top: 4px;
+    left: 1px;
+  }
+  
+  .new-user-form .group-3 {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    top: 0;
+    left: 0;
+  }
+  
+  .new-user-form .div-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    width: 88px;
+    left: 1075px;
+    background-color: #f3f4f6;
+    position: absolute;
+    height: 44px;
+    top: 638px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: transparent;
+  }
+  
+  .new-user-form .text-wrapper-7 {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #565e6c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .line-2 {
+    width: 1220px;
+    top: 98px;
+    left: 83px;
+    position: absolute;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .new-user-form .textbox-7 {
+    top: 279px;
+    left: 916px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-8 {
+    top: 359px;
+    left: 500px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-9 {
+    top: 359px;
+    left: 916px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-10 {
+    top: 199px;
+    left: 83px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .textbox-11 {
+    top: 279px;
+    left: 500px;
+    position: absolute;
+    width: 388px;
+    height: 72px;
+  }
+  
+  .new-user-form .text-wrapper-8 {
+    position: absolute;
+    top: 15px;
+    left: 71px;
+    font-family: "Archivo-Bold", Helvetica;
+    font-weight: 700;
+    color: #323842;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 48px;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .container-2 {
+    position: absolute;
+    width: 1440px;
+    height: 94px;
+    top: -2px;
+    left: 0;
+    background-color: #4850e4;
+    border: 0px none;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+  }
+  
+  .new-user-form .header-menu {
+    position: absolute;
+    width: 416px;
+    height: 69px;
+    top: 13px;
+    left: 1010px;
+  }
+  
+  .new-user-form .frame-3 {
+    width: 94px;
+    height: 69px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .new-user-form .text-wrapper-9 {
+    top: 16px;
+    left: 13px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  
+  .new-user-form .frame-4 {
+    width: 102px;
+    height: 69px;
+    left: 94px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .new-user-form .frame-5 {
+    width: 220px;
+    height: 69px;
+    left: 196px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .new-user-form .image {
+    position: absolute;
+    width: 177px;
+    height: 47px;
+    top: 24px;
+    left: 43px;
+  }
+  
