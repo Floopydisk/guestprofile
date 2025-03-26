@@ -1,6 +1,9 @@
 .main-page {
     background-color: #ffffff;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -15,11 +18,11 @@
   }
   
   .main-page .overlap {
-    position: absolute;
-    width: 1055px;
-    height: 982px;
-    top: 360px;
-    left: 1434px;
+    position: relative;
+    width: 90%;
+    max-width: 1055px;
+    height: auto;
+    margin: 2rem auto;
   }
   
   .main-page .group {
@@ -58,6 +61,12 @@
     border: 0px none;
   }
   
+  /* Font Sizes */
+.text-wrapper {
+  font-size: 4vw; /* Responsive font */
+  line-height: 1.2;
+}
+
   .main-page .text-wrapper {
     position: absolute;
     width: 311px;
@@ -72,15 +81,15 @@
   }
   
   .main-page .container {
-    width: 392px;
+    max-width: 392px;
+    width: 90%;
     height: 357px;
-    top: 159px;
-    left: 101px;
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 9px #171a1f1c, 0px 0px 2px #171a1f1f;
-    position: absolute;
+    position: relative;
+    margin: 2rem auto;
     border: 0px none;
   }
   
@@ -511,17 +520,18 @@
   .main-page .image {
     position: absolute;
     width: 177px;
-    height: 47px;
-    top: 24px;
-    left: 43px;
+    height: 3rem;
+    margin-right: auto;
   }
   
   .main-page .header-menu {
-    position: absolute;
-    width: 416px;
-    height: 69px;
-    top: 13px;
-    left: 2100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    right: auto;
+    height: auto;
+    padding: 1rem;
   }
   
   .main-page .frame {
@@ -590,11 +600,15 @@
   .main-page .container-5 {
     width: 2621px;
     height: 411px;
-    top: 2447px;
+    top: auto;
     left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    padding: 4rem 2rem;
     background-color: grey;
     border-radius: 6px;
-    position: absolute;
+    position: relative;
     border: 0px none;
   }
   
@@ -893,3 +907,8 @@
     white-space: nowrap;
   }
   
+  @media (min-width: 768px) {
+    .text-wrapper {
+      font-size: 2.5rem; /* Fixed size on larger screens */
+    }
+  }

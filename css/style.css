@@ -94,8 +94,8 @@
     left: 916px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
-    color: #424955;
     font-size: 14px;
+    color: #424955;
     letter-spacing: 0;
     line-height: 22px;
   }
@@ -399,67 +399,51 @@
   }
   
   .new-user-form .container-2 {
-    position: absolute;
-    width: 1440px;
+    position: relative; /* Change to relative to flow with the document */
+    width: 100%; /* Make it take the full width of its parent */
     height: 94px;
-    top: -2px;
-    left: 0;
+    top: 0; /* Adjust top as needed */
+    left: 0; /* Adjust left as needed */
     background-color: #4850e4;
     border: 0px none;
     box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    display: flex; /* Use flexbox to position logo and navigation */
+    justify-content: space-between; /* Put space between logo and navigation */
+    align-items: center; /* Vertically align logo and navigation */
+    padding: 0 2rem; /* Add some padding on the sides */
   }
   
   .new-user-form .header-menu {
-    position: absolute;
-    width: 416px;
+    /* position: absolute; Removed absolute positioning */
+    /* width: 416px; Let content determine width */
     height: 69px;
-    top: 13px;
-    left: 1010px;
+    /* top: 13px; Adjust with flex alignment */
+    /* left: 1010px; Adjust with flex positioning */
+    display: flex; /* Use flexbox for menu items */
+    align-items: center;
   }
   
-  .new-user-form .frame-3 {
-    width: 94px;
-    height: 69px;
-    left: 0;
-    position: absolute;
-    top: 0;
+  .new-user-form .header-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default ul margin */
   }
   
   .new-user-form .text-wrapper-9 {
-    top: 16px;
-    left: 13px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
     color: #ffffff;
     font-size: 24px;
     line-height: 36px;
-    position: absolute;
-    letter-spacing: 0;
     white-space: nowrap;
-  }
-  
-  .new-user-form .frame-4 {
-    width: 102px;
-    height: 69px;
-    left: 94px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .new-user-form .frame-5 {
-    width: 220px;
-    height: 69px;
-    left: 196px;
-    position: absolute;
-    top: 0;
+    margin: 0 1rem; /* Add some spacing between nav links */
   }
   
   .new-user-form .image {
-    position: absolute;
+    /* position: absolute; Removed absolute positioning */
     width: 177px;
     height: 47px;
-    top: 24px;
-    left: 43px;
+    /* top: 24px; Adjust with flex alignment */
+    /* left: 43px; Adjust with flex positioning */
   }
   /* Inject original CSS here */
   
