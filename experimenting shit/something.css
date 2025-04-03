@@ -263,8 +263,8 @@ input:focus {
   font-weight: 400;
 }
 
-:root {
-}
+/* :root {
+} */
 
 
 .image {
@@ -2510,8 +2510,29 @@ to{opacity: 1;
   padding: 0px 0px 4px;
 }
 
-.where {
-  
+/* Custom carosel style */
+.c-item {
+  height: 100%;
+  margin-top: 11.5%;
+  position: relative;
+  z-index: 1;
+}
+.c-img {
+  height: 20%;
+  object-fit: cover;
+  position: relative;
+}
+.c-item-full {
+  height: 550px;
+  margin-top: 5%;
+  position: relative;
+  z-index: 1;
+}
+.c-img-full {
+  height: 100%;
+  size: 50%;
+  object-fit: cover;
+  position: relative;
 }
 
 @media screen and (max-width: 1205px) {
