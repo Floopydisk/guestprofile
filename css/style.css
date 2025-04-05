@@ -1,24 +1,29 @@
 .new-user-form {
     background-color: #fafafb;
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Changed from row to column for better overall layout */
     justify-content: center;
     width: 100%;
+    min-height: 100vh; /* Ensure full height */
   }
   
   .new-user-form .div {
     background-color: #fafafb;
-    width: 1440px;
-    height: 1020px;
+    /* width: 1440px; Consider using max-width and margin: 0 auto for responsiveness */
+    /* height: 1020px; */
+    max-width: 1440px;
+    margin: 0 auto; /* Center the content */
     position: relative;
   }
   
   .new-user-form .container {
-    position: absolute;
-    width: 1353px;
-    height: 770px;
-    top: 177px;
-    left: 43px;
+    position: relative; /* absolute */
+    max-width: 1353px;
+    width: 90%;
+    /* height: 770px; */
+    margin: 20px auto;
+    top: auto;
+    left: auto;
     background-color: #ffffff;
     border-radius: 4px;
     border: 1px solid;
@@ -398,53 +403,7 @@
     white-space: nowrap;
   }
   
-  .new-user-form .container-2 {
-    position: relative; /* Change to relative to flow with the document */
-    width: 100%; /* Make it take the full width of its parent */
-    height: 94px;
-    top: 0; /* Adjust top as needed */
-    left: 0; /* Adjust left as needed */
-    background-color: #4850e4;
-    border: 0px none;
-    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
-    display: flex; /* Use flexbox to position logo and navigation */
-    justify-content: space-between; /* Put space between logo and navigation */
-    align-items: center; /* Vertically align logo and navigation */
-    padding: 0 2rem; /* Add some padding on the sides */
-  }
-  
-  .new-user-form .header-menu {
-    /* position: absolute; Removed absolute positioning */
-    /* width: 416px; Let content determine width */
-    height: 69px;
-    /* top: 13px; Adjust with flex alignment */
-    /* left: 1010px; Adjust with flex positioning */
-    display: flex; /* Use flexbox for menu items */
-    align-items: center;
-  }
-  
-  .new-user-form .header-menu ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Remove default ul margin */
-  }
-  
-  .new-user-form .text-wrapper-9 {
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 36px;
-    white-space: nowrap;
-    margin: 0 1rem; /* Add some spacing between nav links */
-  }
-  
-  .new-user-form .image {
-    /* position: absolute; Removed absolute positioning */
-    width: 177px;
-    height: 47px;
-    /* top: 24px; Adjust with flex alignment */
-    /* left: 43px; Adjust with flex positioning */
-  }
+
   /* Inject original CSS here */
   
   /* Additional styles for refactored HTML */
@@ -542,12 +501,12 @@
     gap: 0.5rem;
   }
   
-  .privacy-notice {
-    padding-top: 5rem;
+  .privacy-noticecc {
+    padding-top: 0rem;
     font-family: "Inter-Regular", Helvetica;
     font-size: 14px;
     color: #6e7787;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
   }
   
   .privacy-link {
@@ -587,9 +546,89 @@
     font-size: 1.2em;
   }
   
+
+  .move{
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+  }
+  .index{
+    z-index: 5;
+  }
+  /* Style the navigation links */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Adjust text color */
+  font-size: 1.2rem; /* Adjust font size */
+  /* Add any other desired styles for the links */
+}
+
+/* Optional: Style the active link */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  /* Add any other styles for the active link */
+}
+
+/* You can further customize the navbar background if needed */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8); /* Adjust link color on dark background */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+}
+
   @media (max-width: 768px) {
     .form-fields {
       grid-template-columns: 1fr;
     }
-  }
+    .new-user-form .header-menu ul {
+      display: block; /* Hide the navigation links by default */
+      flex-direction: column; /* Display links vertically when open */
+      width: 100%; /* Make the dropdown take full width */
+      background-color: #4850e4; /* Match header background */
+      position: absolute; /* Position it below the header */
+      top: 100%; /* Adjust based on header height if needed */
+      left: 0;
+      z-index: 10; /* Ensure it's above other content */
+      padding: 0;
+      margin: 0;
+    }
   
+    .new-user-form .header-menu ul.open {
+      display: flex; /* Show the navigation links when the 'open' class is added */
+    }
+  
+    .nav-link {
+      padding: 1rem; /* Add more padding for touch targets */
+      text-align: center; /* Center the links in the dropdown */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Add a subtle divider */
+    }
+  
+    .nav-link:last-child {
+      border-bottom: none; /* Remove the bottom border from the last link */
+    }
+  
+    /* Style for the "more" icon */
+    .mobile-nav-toggle {
+      display: block; /* Show on mobile */
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 1.5rem; /* Adjust size as needed */
+      padding: 0.5rem;
+      border: none;
+      background: transparent;
+    }
+  
+    /* Ensure the logo is still visible and takes up space */
+    .header {
+      display: flex;
+      justify-content: space-between; /* Keep logo and toggle apart */
+      align-items: center;
+      padding: 1rem;
+    }
+  }

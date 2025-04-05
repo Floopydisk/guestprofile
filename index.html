@@ -5,21 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guest Profile Form</title>
     <link rel="stylesheet" href="css/globals.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <div class="new-user-form">
       <main class="main-content">
-        <header class="header">           
-          <img class="logo" src="img/logo.png" alt="Company Logo" />
+        <!-- <header class="header">
+          <script>
+            const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+            const headerMenu = document.querySelector('.new-user-form .header-menu ul');
+
+            mobileNavToggle.addEventListener('click', () => {
+              headerMenu.classList.toggle('open');
+            });
+          </script>
+          <div class="logo">
+            <img src="img/logo.png" class="logo"  alt="Logo">
+          </div>
+          <button class="mobile-nav-toggle">
+            &#8801; </button>
           <nav class="header-menu">
             <ul>
-              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="https://daystarng.org" class="nav-link">Home</a></li>
               <li><a href="#" class="nav-link">Events</a></li>
               <li><a href="#" class="nav-link">Home Fellowship</a></li>
             </ul>
           </nav>
-        </header>
+        </header> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- navbar starts -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary"> <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" class="logo">
+          </a>
+          <button class="navbar-toggler move" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://daystarng.org">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home Fellowship
+        </div>
+      </nav>
+         <!-- nabbar ends -->
         <form class="guest-profile-form" action="mainpage.html" method="post">
           <h1 class="form-title">Guest Profile</h1>
           <div class="form-fields">
