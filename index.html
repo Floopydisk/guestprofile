@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/validation.css" /> <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/validation.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/ajax.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="new-user-form">
@@ -32,7 +35,7 @@
         </div>
       </nav>
       <!-- nabbar ends -->
-         <form class="guest-profile-form" action="mainpage.html" method="post">
+      <form class="guest-profile-form" id="guestProfileForm">
           <input type="hidden" id="center-name" name="center-name" value="">
           <h1 class="form-title">Guest Profile</h1>
           <div class="form-fields">
@@ -73,13 +76,6 @@
                 <option value="married">Married</option>
                 <option value="divorced">Divorced</option>
                 <option value="widowed">Widowed</option>
-              <!-- <input
-                type="text"
-                id="relationship-status"
-                name="relationship-status"
-                placeholder="Relationship Status"
-                required
-              /> -->
               </select>
               </div>
             <div class="form-field">
@@ -127,6 +123,7 @@
             </button>
           </div>
         </form>
+        <div id="response"></div>
       </main>
     </div>
 </body>
