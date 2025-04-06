@@ -2,9 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Inter:400,700,600|Alexandria:700");
 
-/* The following line is used to measure usage of this code. You can remove it if you want. */
-@import url("https://px.animaapp.com/67dad9bd48f185bdf70e9251.67dad9bd48f185bdf70e9254.OvmppL8.hch.png");
-
 
 .screen textarea:focus,
 .screen input:focus {
@@ -306,11 +303,17 @@ input:focus {
   position: relative;
 }
 
+
+.position{
+  z-index: 10;
+}
 /* screen - main-page */
 
 .main-page {
   background-color: var(--white);
   height: 2180px;
+  top: -90px;
+  z-index: 5;
   overflow: hidden;
   overflow-x: hidden;
   position: relative;
@@ -1469,6 +1472,7 @@ to{opacity: 1;
   overflow: hidden;
   overflow-x: hidden;
   position: relative;
+  top: -90px;
   width: 619px;
 }
 
