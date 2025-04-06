@@ -6,10 +6,10 @@ $(document).ready(function() {
 
     $.ajax({
       type: "POST",
-      url: "process_form.php", // Adjust the URL if you saved process_form.php in a subdirectory
+      url: "../php/process_form.php", // Adjust the URL if you saved process_form.php in a subdirectory
       data: formData,
       dataType: "json",
-      encode: true, // This is likely not needed
+     // encode: true, // This is likely not needed
 
       success: function(data) {
         if (data.success) {
