@@ -506,7 +506,7 @@
     font-family: "Inter-Regular", Helvetica;
     font-size: 14px;
     color: #6e7787;
-    /* margin: 2rem 0; */
+    margin: 2rem 0;
   }
   
   .privacy-link {
@@ -581,6 +581,7 @@
 .navbar-dark .navbar-brand {
   color: #ffffff;
 }
+
 
   @media (max-width: 768px) {
     .form-fields {

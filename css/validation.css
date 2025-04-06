@@ -1,0 +1,11 @@
+/* css/validation.css */
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    padding: 0.2em 0.5em;
+    display: block;
+    background-color: #ffe0e0;
+    border: 1px solid red;
+}
