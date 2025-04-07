@@ -1,2 +1,6 @@
-# Exclude backups folder
-backups/
+# Exclude the following folders
+backup/
+node_modules/
+# Exclude the following files
+package.json
+package-lock.json
